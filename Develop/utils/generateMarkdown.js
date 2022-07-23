@@ -53,57 +53,57 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-    ${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)}
 
-    ## Table of content
+## Table of content
 
-    1. [Description](#description)
-    2. [Installation Guide](#installation)
-    3. [Usage Information](#usage)
-    4. [Contribution Guideline](#contributing)
-    5. [Test Instruction](#test)
-    6. [Question](#question)
-    7. [License](#license)
+1. [Description](#description)
+2. [Installation Guide](#installation)
+3. [Usage Information](#usage)
+4. [Contribution Guideline](#contributing)
+5. [Test Instruction](#test)
+6. [Question](#question)
+7. [License](#license)
 
-    ## Description <a name="description"></a>
+## Description <a name="description"></a>
 
-    \```
-      ${data.projectDesc}
-    \```
+\`\`\`
+  ${data.projectDesc}
+\`\`\`
 
-    ## Installation Guide <a name="installation"></a>
+## Installation Guide <a name="installation"></a>
 
-    \```
-      ${data.installation}
-    \```
+\`\`\`
+  ${data.installation}
+\`\`\`
 
-    ## Usage Information <a name="usage"></a>
+## Usage Information <a name="usage"></a>
 
-    \```
-      ${data.usage}
-    \```
+\`\`\`
+  ${data.usage}
+\`\`\`
 
-    ## Contribution Guideline <a name="contributing"></a>
+## Contribution Guideline <a name="contributing"></a>
 
-    \```
-      ${data.contributing}
-    \```
+\`\`\`
+  ${data.contributing}
+\`\`\`
 
-    ## Test Instruction <a name="test"></a>
+## Test Instruction <a name="test"></a>
 
-    \```
-      ${data.test}
-    \```
+\`\`\`
+  ${data.test}
+\`\`\`
 
-    ## Question <a name="question"></a>
+## Question <a name="question"></a>
 
-    [GitHub Account](${"https://github.com/" + data.userName }) or reach me by my email ${data.email}
+[GitHub Account](${"https://github.com/" + data.userName }) or reach me by my email ${data.email}
 
-    ## License <a name="license"></a>
+## License <a name="license"></a>
 
-    We use [${data.license}](${renderLicenseLink(data.license)})
+We use [${data.license}](${renderLicenseLink(data.license)})
 
-  `;
+`;
 }
 
 module.exports = generateMarkdown;
