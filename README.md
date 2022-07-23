@@ -30,4 +30,12 @@ run
 ```
 npm install
 ```
-on the root folder
+on the root folder. Then run 
+```
+node index.js
+```
+
+## Video
+You can watch a video for demonstrating how this app is used on here. 
+
+https://drive.google.com/file/d/10dPvR8635x4audMyO9kRF0x8hjWvNyel/view
