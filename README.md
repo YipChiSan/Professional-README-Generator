@@ -24,3 +24,10 @@ THEN this is added to the section of the README entitled Questions, with a link 
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 7. WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
+
+## Installation
+run
+```
+npm install
+```
+on the root folder
